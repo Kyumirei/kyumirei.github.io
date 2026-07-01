@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AppBar, Avatar, Box, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from "@mui/material";
 import { Email as EmailIcon, Instagram as InstagramIcon, Menu as MenuIcon } from "@mui/icons-material";
 import { DiscordIcon } from "../SvgIcons/DiscordIcon";
+import { LinktreeIcon } from "../SvgIcons/LinkTreeIcon";
 import avatarImg from "../../assets/avatar.jpg";
 import { sideBarWidth } from "../../constants/common.constant";
 import type { SidebarProps } from "./sidebar.interface";
@@ -25,7 +26,7 @@ const links = Object.freeze([
   },
   {
     text: "Linktree",
-    icon: null,
+    icon: <LinktreeIcon />,
     url: "https://linktr.ee/kyumirei"
   },
   {
@@ -65,9 +66,23 @@ export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
       <Typography variant="h3" sx={{ textAlign: "center", fontFamily: '"Yuji Syuku", serif', color: "primary.main" }} gutterBottom>
         Kyumirei
       </Typography>
-      <Toolbar sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <Avatar src={avatarImg} alt="Kyumirei avatar" sx={{ width: 200, height: 200 }} variant="rounded" />
-      </Toolbar>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center"
+        }}
+      >
+        <Avatar
+          src={avatarImg}
+          alt="Kyumirei avatar"
+          variant="rounded"
+          sx={{
+            width: { xs: 120, sm: 160, md: 200 },
+            height: { xs: 120, sm: 160, md: 200 }
+          }}
+        />
+      </Box>
       <Divider />
 
       <List component="nav" aria-label="Main navigation" sx={{ mt: 0.5 }}>
