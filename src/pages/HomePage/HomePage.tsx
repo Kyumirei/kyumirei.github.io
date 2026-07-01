@@ -1,6 +1,5 @@
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { Gallery } from "../../components/Gallery/Gallery";
-// import { loadGalleryCategories } from "../../utils/loadGalleryImages.ts";
+import { LightboxGallery } from "../../components/Gallery/LightboxGallery";
 import { galleryService } from "../../services/gallery/gallery.service.instance.ts";
 import type { GalleryCategory } from "../../services/gallery/interfaces/gallery.interface.ts";
 // TODO: configurable par CMS
@@ -55,7 +54,7 @@ export default function HomePage() {
             >
               {category.title}
             </Typography>
-            <Gallery cols={cols} images={category.images} />
+            <LightboxGallery cols={cols} images={category.images} />
           </Box>
         ))}
       </Box>
