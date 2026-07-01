@@ -1,0 +1,24 @@
+/**
+  * Global CSS 
+  */
+
+/* Load google fonts */
+
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Yuji Syuku */
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+
+/* Playfair Display */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+
+:root {
+  --sidebar-width: 320px;
+  --bg-sidebar: #f0ede6;
+  --bg-main: #ffffff;
+}
+
+body {
+  background-color: #f9f6ee !important;
+}
