@@ -14,14 +14,19 @@ const navItems = Object.freeze([
 
 const links = Object.freeze([
   {
+    text: "Instagram : kyumirei",
+    icon: <InstagramIcon />,
+    url: "https://instagram.com/kyumirei"
+  },
+  {
     text: "kyumirei.contact@gmail.com",
     icon: <EmailIcon />,
     url: "mailto:kyumirei.contact@gmail.com"
   },
   {
-    text: "Instagram : kyumirei",
-    icon: <InstagramIcon />,
-    url: "https://instagram.com/kyumirei"
+    text: "Linktree",
+    icon: null,
+    url: "https://linktr.ee/kyumirei"
   },
   {
     text: "Discord : kyumirei",
