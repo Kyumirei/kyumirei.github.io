@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AppBar, Avatar, Box, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from "@mui/material";
 import { Email as EmailIcon, Instagram as InstagramIcon, Menu as MenuIcon } from "@mui/icons-material";
 import { DiscordIcon } from "../SvgIcons/DiscordIcon";
-import { LinktreeIcon } from "../SvgIcons/LinkTreeIcon";
+import { LinktreeIcon } from "../SvgIcons/LinktreeIcon";
 import avatarImg from "../../assets/avatar.jpg";
 import { sideBarWidth } from "../../constants/common.constant";
 import type { SidebarProps } from "./sidebar.interface";
