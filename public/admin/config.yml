@@ -1,0 +1,73 @@
+locale: fr
+
+editor:
+  preview: false
+
+backend:
+  name: github
+  repo: Kyumirei/kyumirei.github.io
+  branch: main
+  base_url: https://decap-proxy.shafouin.workers.dev
+
+# Where Decap will upload images through the media widget
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+# Optional: makes editors work on drafts via PRs
+publish_mode: editorial_workflow
+
+collections:
+  # --- Contenu de la page "A propos" ---
+  - name: "about"
+    label: "À propos"
+    files:
+      - name: "about"
+        label: 'Page "À propos"'
+        file: "public/content/about.md"
+        fields:
+          - { label: "Contenu", name: "body", widget: "richtext" }
+
+  # Avatar dans la sidebar
+  - name: "avatar"
+    label: "Avatar"
+    files:
+      - name: "avatar"
+        label: "Avatar (barre de gauche)"
+        file: "public/content/avatar.json"
+        fields:
+          - { label: "Image", name: "src", widget: "image", hint: "Utilisez une petite image pour un meilleur rendu. Taille recommandée : 300x300px" }
+          - label: "Forme"
+            name: "variant"
+            widget: "select"
+            options:
+              - { label: "Cercle", value: "circular" }
+              - { label: "Coins arrondis", value: "rounded" }
+              - { label: "Carré", value: "square" }
+          - { label: "Texte alternatif (malvoyants et référencement)", name: "alt", widget: "string", required: false }
+
+  # Gallerie des travaux
+  - name: "gallery"
+    label: "Gallerie de mes travaux"
+    files:
+      - name: "gallery"
+        label: 'Page "Mes travaux"'
+        file: "public/content/gallery.json"
+        fields:
+          - label: "Type de travail / Catégorie"
+            name: "categorie"
+            widget: "list"
+            fields:
+              - { label: "Nom de la catégorie", name: "name", widget: "string" }
+              # - { label: "Slug", name: "slug", widget: "string" }
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                fields:
+                  - {
+                      label: "Image",
+                      name: "src",
+                      widget: "image",
+                      hint: "Les images peuvent être redimensionnées et compressées au préalable pour accélérer le chargement de la page (par exemple dans l'application Photos ou Paint)"
+                    }
+                  # - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Texte alternatif (malvoyants et référencement)", name: "alt", widget: "string", required: false }

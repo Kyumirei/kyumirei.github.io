@@ -25,13 +25,7 @@ export function LightboxGallery({ cols, images }: GalleryProps) {
               transition: "opacity 0.2s"
             }}
           >
-            <img
-              srcSet={`${img.src}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              src={`${img.src}?w=248&fit=crop&auto=format`}
-              alt={img.title}
-              loading="lazy"
-              style={{ display: "block", width: "100%", height: "auto" }}
-            />
+            <img srcSet={`${img.src}`} src={`${img.src}`} alt={img.alt} loading="lazy" style={{ display: "block", width: "100%", height: "auto" }} />
           </ImageListItem>
         ))}
       </ImageList>
@@ -71,7 +65,7 @@ export function LightboxGallery({ cols, images }: GalleryProps) {
         {selected && (
           <img
             src={selected.src}
-            alt={selected.title}
+            alt={selected.alt}
             style={{
               display: "block",
               maxWidth: "95vw",

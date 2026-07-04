@@ -1,16 +1,38 @@
 import { useState } from "react";
-import { AppBar, Avatar, Box, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  Avatar,
+  Box,
+  Divider,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Skeleton,
+  Toolbar,
+  Typography,
+  type AvatarOwnProps
+} from "@mui/material";
 import { Email as EmailIcon, Instagram as InstagramIcon, Menu as MenuIcon } from "@mui/icons-material";
 import { DiscordIcon } from "../SvgIcons/DiscordIcon";
 import { LinktreeIcon } from "../SvgIcons/LinktreeIcon";
-import avatarImg from "../../assets/avatar.jpg";
 import { sideBarWidth } from "../../constants/common.constant";
+import { useJson } from "../../hooks/useJson";
 import type { SidebarProps } from "./sidebar.interface";
 import type { Page } from "../App/app.interface";
 
+type RawAvatarJson = Readonly<{ src: string; alt?: string; variant: AvatarOwnProps["variant"] }>;
+
+// Is local dev
+const isDev: boolean = import.meta.env.DEV;
+
 const navItems = Object.freeze([
   { label: "Mes travaux", page: "home" },
-  { label: "À propos", page: "about" }
+  { label: "À propos", page: "about" },
+  ...(isDev ? [{ label: "(Dev) Admin", page: "admin" as const }] : [])
 ] as const);
 
 const links = Object.freeze([
@@ -43,6 +65,8 @@ export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
 
+  const { content: avatarContent, loading } = useJson<RawAvatarJson>("/content/avatar.json");
+
   const handleDrawerClose = () => {
     setIsClosing(true);
     setMobileOpen(false);
@@ -57,8 +81,13 @@ export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
   };
 
   const handleNavigate = (page: Page) => {
-    onNavigate(page);
-    handleDrawerClose(); // close on mobile after navigation
+    if (isDev && page === "admin") {
+      // window.location.href = "/admin/index.html";
+      window.open("/admin/index.html", "_blank");
+    } else {
+      onNavigate(page);
+      handleDrawerClose(); // close on mobile after navigation
+    }
   };
 
   const drawerContent = (
@@ -73,15 +102,25 @@ export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
           alignItems: "center"
         }}
       >
-        <Avatar
-          src={avatarImg}
-          alt="Kyumirei avatar"
-          variant="rounded"
-          sx={{
-            width: { xs: 120, sm: 160, md: 200 },
-            height: { xs: 120, sm: 160, md: 200 }
-          }}
-        />
+        {loading ? (
+          <Skeleton
+            variant="rounded"
+            sx={{
+              width: { xs: 120, sm: 160, md: 200 },
+              height: { xs: 120, sm: 160, md: 200 }
+            }}
+          />
+        ) : (
+          <Avatar
+            src={avatarContent?.src as string}
+            alt={avatarContent?.alt as string}
+            variant={avatarContent?.variant}
+            sx={{
+              width: { xs: 120, sm: 160, md: 200 },
+              height: { xs: 120, sm: 160, md: 200 }
+            }}
+          />
+        )}
       </Box>
       <Divider />
 
