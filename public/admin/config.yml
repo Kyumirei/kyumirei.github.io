@@ -1,0 +1,51 @@
+locale: fr
+
+editor:
+  preview: false
+
+backend:
+  name: github
+  repo: Kyumirei/kyumirei.github.io
+  branch: main
+  base_url: https://decap-proxy.shafouin.workers.dev
+
+# Where Decap will upload images through the media widget
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+# Optional: makes editors work on drafts via PRs
+publish_mode: editorial_workflow
+
+collections:
+  # --- About Me (single file) ---
+  - name: "about"
+    label: "À propos"
+    files:
+      - name: "about"
+        label: 'Page "À propos"'
+        file: "public/content/about.md"
+        fields:
+          # - { label: "Portrait", name: "portrait", widget: "image", required: false }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+
+  # --- Gallery categories ---
+  - name: "gallery"
+    label: "Gallerie des travaux"
+    files:
+      - name: "gallery"
+        label: "Catégories de la gallerie"
+        file: "public/content/gallery.json"
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Slug", name: "slug", widget: "string" }
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt text", name: "alt", widget: "string", required: false }

@@ -8,9 +8,13 @@ import { sideBarWidth } from "../../constants/common.constant";
 import type { SidebarProps } from "./sidebar.interface";
 import type { Page } from "../App/app.interface";
 
+// Is local dev
+const isDev: boolean = import.meta.env.DEV;
+
 const navItems = Object.freeze([
   { label: "Mes travaux", page: "home" },
-  { label: "À propos", page: "about" }
+  { label: "À propos", page: "about" },
+  ...(isDev ? [{ label: "(Dev) Admin", page: "admin" as const }] : [])
 ] as const);
 
 const links = Object.freeze([
@@ -57,8 +61,13 @@ export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
   };
 
   const handleNavigate = (page: Page) => {
-    onNavigate(page);
-    handleDrawerClose(); // close on mobile after navigation
+    if (isDev && page === "admin") {
+      // eslint-disable-next-line react-hooks/immutability
+      window.location.href = "/admin/index.html";
+    } else {
+      onNavigate(page);
+      handleDrawerClose(); // close on mobile after navigation
+    }
   };
 
   const drawerContent = (
