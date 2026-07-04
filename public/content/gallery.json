@@ -1,0 +1,73 @@
+{
+  "categorie": [
+    {
+      "name": "Illustration traditionnelle",
+      "images": [
+        {
+          "src": "/images/uploads/Sorcière_halloween_2025_scan(froid).jpg"
+        },
+        {
+          "src": "/images/uploads/20240107_122629.jpg"
+        },
+        {
+          "src": "/images/uploads/Devoir drapé_2TBCHOÏ_PelloquinElisa.jpg"
+        },
+        {
+          "src": "/images/uploads/Intérieur Victorien - Salon.jpg"
+        },
+        {
+          "src": "/images/uploads/20260404_142237.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Illustration digitale",
+      "images": [
+        {
+          "src": "/images/uploads/2ATBCHOÏ_PELLOQUINELISA_LOFIGIRL.jpg"
+        },
+        {
+          "src": "/images/uploads/Peinture sous-marine - FINALEE.jpg"
+        },
+        {
+          "src": "/images/uploads/Illustration pokemon - Finale (équipe) v2 ♥.jpg"
+        },
+        {
+          "src": "/images/uploads/2ATCTBCHOI_PELLOQUINELISA_BOUTIQUEFUTURISTE_DEVANTURECOULEUR - Copie.jpg"
+        },
+        {
+          "src": "/images/uploads/2ATCTBCHOI_PELLOQUINELISA_BOUTIQUEFUTURISTE_PERSPECTIVE.jpg"
+        },
+        {
+          "src": "/images/uploads/MATCHA LOVER.jpg"
+        },
+        {
+          "src": "/images/uploads/Illustratio dnd chara.png"
+        },
+        {
+          "src": "/images/uploads/Space Boy.png"
+        },
+        {
+          "src": "/images/uploads/Character Design Avatar Zoom Science FINAL v.9.png"
+        }
+      ]
+    },
+    {
+      "name": "Manga",
+      "images": [
+        {
+          "src": "/images/uploads/Manga - A la Recherche du Bonheur (Pelloquin Elisa ATC TBCHOÏ)_001.jpg"
+        },
+        {
+          "src": "/images/uploads/Manga - A la Recherche du Bonheur (Pelloquin Elisa ATC TBCHOÏ)_008.jpg"
+        },
+        {
+          "src": "/images/uploads/Manga - A la Recherche du Bonheur (Pelloquin Elisa ATC TBCHOÏ)_009.jpg"
+        },
+        {
+          "src": "/images/uploads/Manga - A la Recherche du Bonheur (Pelloquin Elisa ATC TBCHOÏ)_016.jpg"
+        }
+      ]
+    }
+  ]
+}

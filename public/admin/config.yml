@@ -30,22 +30,22 @@ collections:
 
   # --- Gallery categories ---
   - name: "gallery"
-    label: "Gallerie des travaux"
+    label: "Gallerie de mes travaux"
     files:
       - name: "gallery"
-        label: "Catégories de la gallerie"
+        label: 'Page "Mes travaux"'
         file: "public/content/gallery.json"
         fields:
-          - label: "Categories"
-            name: "categories"
+          - label: "Type de travail / Catégorie"
+            name: "categorie"
             widget: "list"
             fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Slug", name: "slug", widget: "string" }
+              - { label: "Nom de la catégorie", name: "name", widget: "string" }
+              # - { label: "Slug", name: "slug", widget: "string" }
               - label: "Images"
                 name: "images"
                 widget: "list"
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
                   - { label: "Image", name: "src", widget: "image" }
-                  - { label: "Alt text", name: "alt", widget: "string", required: false }
+                  # - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Texte alternatif (malvoyants et référencement)", name: "alt", widget: "string", required: false }

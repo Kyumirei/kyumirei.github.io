@@ -1,12 +1,14 @@
 export type GalleryImage = {
     id: string;
-    title: string;
+    // title: string;
+    alt: string;
     src: string;
 };
 
 export type GalleryCategory = {
-    slug: string;
-    title: string;
+    // slug: string;
+    // title: string;
+    name: string;
     images: GalleryImage[];
 };
 
