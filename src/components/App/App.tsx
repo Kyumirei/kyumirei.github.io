@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { Box, Container, Toolbar } from "@mui/material";
 import Sidebar from "../Sidebar/Sidebar";
-import HomePage from "../../pages/HomePage/HomePage";
-import AboutPage from "../../pages/AboutPage/AboutPage";
 import { sideBarWidth } from "../../constants/common.constant";
 import type { Page } from "./app.interface";
 
+const HomePage = lazy(() => import("../../pages/HomePage/HomePage"));
+
+const AboutPage = lazy(() => import("../../pages/AboutPage/AboutPage"));
 /**
  * Main container for the other components
  */
@@ -27,8 +28,11 @@ function App() {
         {/* Spacer that matches AppBar height — only on mobile */}
         <Toolbar sx={{ display: { xs: "block", sm: "none" } }} />
 
-        {currentPage === "home" && <HomePage />}
-        {currentPage === "about" && <AboutPage />}
+        {/* No fallback because it's additional code to load and also usually ugly */}
+        <Suspense>
+          {currentPage === "home" && <HomePage />}
+          {currentPage === "about" && <AboutPage />}
+        </Suspense>
       </Box>
     </Container>
   );

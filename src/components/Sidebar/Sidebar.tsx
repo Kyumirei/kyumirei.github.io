@@ -16,7 +16,10 @@ import {
   Typography,
   type AvatarOwnProps
 } from "@mui/material";
-import { Email as EmailIcon, Instagram as InstagramIcon, Menu as MenuIcon } from "@mui/icons-material";
+// Individual imports for tree-shaking
+import EmailIcon from "@mui/icons-material/Email";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import MenuIcon from "@mui/icons-material/Menu";
 import { DiscordIcon } from "../SvgIcons/DiscordIcon";
 import { LinktreeIcon } from "../SvgIcons/LinktreeIcon";
 import { sideBarWidth } from "../../constants/common.constant";

@@ -1,5 +1,5 @@
 import { Dialog, IconButton } from "@mui/material";
-import { Close as CloseIcon } from "@mui/icons-material";
+import CloseIcon from "@mui/icons-material/Close";
 import type { GalleryImage } from "../gallery.interface";
 
 interface LightboxProps {
