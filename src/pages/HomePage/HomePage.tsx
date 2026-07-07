@@ -1,8 +1,8 @@
 import { Alert, Box, CircularProgress, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { LightboxGallery } from "../../components/Gallery/LightboxGallery";
-import type { GalleryCategory } from "../../services/gallery/interfaces/gallery.interface.ts";
 import { useJson } from "../../hooks/useJson.ts";
 import { useMemo } from "react";
+import type { GalleryCategory } from "../../components/Gallery/gallery.interface.ts";
 
 type RawGalleryCategory = {
   readonly name: string;
@@ -27,12 +27,10 @@ export default function HomePage() {
   const categories: GalleryCategory[] = useMemo(() => {
     if (!content?.categorie) return [];
     return content.categorie.map((c) => ({
-      // title: c.name, // <-- map `name` to `title`
       name: c.name,
       images: (c.images ?? []).map((img) => ({
-        id: img.src, // <-- src is stable & unique enough for a key
+        id: img.src,
         src: img.src,
-        // title: img.title,
         alt: img.alt ?? ""
       }))
     }));
@@ -81,23 +79,6 @@ export default function HomePage() {
         </Alert>
       )}
 
-      {/* <Box sx={{ width: "100%" }}>
-        {categories.map((category) => (
-          <Box key={category.slug}>
-            <Typography
-              variant="h3"
-              sx={{
-                fontSize: { xs: "1.25rem", sm: "1.5rem", md: "2rem" },
-                mt: { xs: 2, md: 3 },
-                mb: { xs: 1, md: 2 }
-              }}
-            >
-              {category.title}
-            </Typography>
-            <LightboxGallery cols={cols} images={category.images} />
-          </Box>
-        ))}
-      </Box> */}
       {!loading && !error && categories.length > 0 && (
         <Box sx={{ width: "100%" }}>
           {categories.map((category) => (
