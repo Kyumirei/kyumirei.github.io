@@ -1,6 +1,25 @@
 {
   "categorie": [
     {
+      "name": "Catégorie toto 12345",
+      "images": [
+        {
+          "src": "/images/uploads/Peinture sous-marine - FINALEE.jpg",
+          "alt": "test123"
+        },
+        {
+          "src": "/images/uploads/Devoir drapé_2TBCHOÏ_PelloquinElisa.jpg",
+          "alt": "azezaezae"
+        },
+        {
+          "src": "/images/uploads/pexels-david-kanigan-239927285-38269295.jpg"
+        },
+        {
+          "src": "/images/uploads/still_life_with_bottles_and_fruit_2004.140.38.jpg"
+        }
+      ]
+    },
+    {
       "name": "Illustration traditionnelle",
       "images": [
         {
