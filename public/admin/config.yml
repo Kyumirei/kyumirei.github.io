@@ -14,7 +14,7 @@ media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 # Optional: makes editors work on drafts via PRs
-publish_mode: editorial_workflow
+publish_mode: simple
 
 collections:
   # --- Contenu de la page "A propos" ---
