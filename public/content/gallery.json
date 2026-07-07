@@ -1,6 +1,25 @@
 {
   "categorie": [
     {
+      "name": "Catégorie toto 12345",
+      "images": [
+        {
+          "src": "/images/uploads/Peinture sous-marine - FINALEE.jpg",
+          "alt": "test123"
+        },
+        {
+          "src": "/images/uploads/Devoir drapé_2TBCHOÏ_PelloquinElisa.jpg",
+          "alt": "azezaezae"
+        },
+        {
+          "src": "/images/uploads/pexels-david-kanigan-239927285-38269295.jpg"
+        },
+        {
+          "src": "/images/uploads/still_life_with_bottles_and_fruit_2004.140.38.jpg"
+        }
+      ]
+    },
+    {
       "name": "Illustration traditionnelle",
       "images": [
         {
@@ -13,10 +32,19 @@
           "src": "/images/uploads/Devoir drapé_2TBCHOÏ_PelloquinElisa.jpg"
         },
         {
+          "src": "/images/uploads/img_20241215_181755_658.jpg"
+        },
+        {
           "src": "/images/uploads/Intérieur Victorien - Salon.jpg"
         },
         {
           "src": "/images/uploads/20260404_142238-v2.jpg"
+        },
+        {
+          "src": "/images/uploads/vignettes-ombrage-illustration-perspective-décors-et-personnages-olivia-.jpg"
+        },
+        {
+          "src": "/images/uploads/img_20250330_164710_034.jpg"
         }
       ]
     },
@@ -49,6 +77,9 @@
         },
         {
           "src": "/images/uploads/Character Design Avatar Zoom Science FINAL v.9.png"
+        },
+        {
+          "src": "/images/uploads/idée-personnage-vert-v8.jpg"
         }
       ]
     },
