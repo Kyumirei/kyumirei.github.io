@@ -1,4 +1,4 @@
-#### Je suis une artiste, illustratrice, concept art, et aspirante mangaka.
+#### Je suis une artiste, spécialisée dans l'illustration, le concept art (background/character design), et le manga.
 
 Cette grande aventure a commencé au collège, lorsque je me suis découvert une véritable passion pour les mangas que je dévorais dans la petite bibliothèque de mon établissement. Fascinée par leur univers et leur style graphique, j'ai très vite commencé à rêver de créer les miens.
 
