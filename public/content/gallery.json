@@ -1,7 +1,27 @@
 {
   "categorie": [
     {
-      "name": "Illustration de personnages/Character Illustration"
+      "name": "Illustration de personnages/Character Illustration",
+      "images": [
+        {
+          "src": "/images/uploads/character-vert-illustration.jpg"
+        },
+        {
+          "src": "/images/uploads/idée-personnage-vert-v8.jpg"
+        },
+        {
+          "src": "/images/uploads/illustration-vogue-brown-aesthetic.jpg"
+        },
+        {
+          "src": "/images/uploads/2ATBCHOÏ_PELLOQUINELISA_LOFIGIRL.jpg"
+        },
+        {
+          "src": "/images/uploads/Sorcière_halloween_2025_scan(froid).jpg"
+        },
+        {
+          "src": "/images/uploads/character-design-avatar-zoom-science-vert-v.3.png"
+        }
+      ]
     },
     {
       "name": "Character Design"
