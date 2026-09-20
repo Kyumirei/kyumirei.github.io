@@ -1,83 +1,13 @@
 {
   "categorie": [
     {
-      "name": "Illustration digitale",
-      "images": [
-        {
-          "src": "/images/uploads/character-vert-illustration.jpg"
-        },
-        {
-          "src": "/images/uploads/idée-personnage-vert-v8.jpg"
-        },
-        {
-          "src": "/images/uploads/illustration-vogue-brown-aesthetic.jpg"
-        },
-        {
-          "src": "/images/uploads/2ATBCHOÏ_PELLOQUINELISA_LOFIGIRL.jpg"
-        },
-        {
-          "src": "/images/uploads/charater-design-rock-star.jpg"
-        },
-        {
-          "src": "/images/uploads/Illustration pokemon - Finale (équipe) v2 ♥.jpg"
-        },
-        {
-          "src": "/images/uploads/Character Design Avatar Zoom Science FINAL v.9.png"
-        },
-        {
-          "src": "/images/uploads/Space Boy.png"
-        },
-        {
-          "src": "/images/uploads/Illustratio dnd chara.png"
-        },
-        {
-          "src": "/images/uploads/2ATCTBCHOI_PELLOQUINELISA_BOUTIQUEFUTURISTE_PERSPECTIVE.jpg"
-        },
-        {
-          "src": "/images/uploads/2ATCTBCHOI_PELLOQUINELISA_BOUTIQUEFUTURISTE_DEVANTURECOULEUR - Copie.jpg"
-        },
-        {
-          "src": "/images/uploads/Peinture sous-marine - FINALEE.jpg"
-        },
-        {
-          "src": "/images/uploads/MATCHA LOVER.jpg"
-        },
-        {
-          "src": "/images/uploads/inshot_20260911_144017263.jpg"
-        }
-      ]
+      "name": "Illustration de personnages/Character Illustration"
     },
     {
-      "name": "Illustration traditionnelle",
-      "images": [
-        {
-          "src": "/images/uploads/Sorcière_halloween_2025_scan(froid).jpg"
-        },
-        {
-          "src": "/images/uploads/20240107_122629.jpg"
-        },
-        {
-          "src": "/images/uploads/20260717_172629.jpg"
-        },
-        {
-          "src": "/images/uploads/Devoir drapé_2TBCHOÏ_PelloquinElisa.jpg"
-        },
-        {
-          "src": "/images/uploads/img_20241215_181755_658.jpg"
-        },
-        {
-          "src": "/images/uploads/Intérieur Victorien - Salon.jpg"
-        },
-        {
-          "src": "/images/uploads/20260404_142238-v2.jpg"
-        },
-        {
-          "src": "/images/uploads/vignettes-ombrage-illustration-perspective-décors-et-personnages-olivia-.jpg"
-        },
-        {
-          "src": "/images/uploads/img_20250330_164710_034.jpg"
-        }
-      ]
+      "name": "Character Design"
+    },
+    {
+      "name": "Decors/Background"
     },
     {
       "name": "Manga",
