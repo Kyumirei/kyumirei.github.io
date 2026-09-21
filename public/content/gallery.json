@@ -68,23 +68,6 @@
       ]
     },
     {
-      "name": "Autres",
-      "images": [
-        {
-          "src": "/images/uploads/MATCHA LOVER.jpg"
-        },
-        {
-          "src": "/images/uploads/inshot_20260911_144017263.jpg"
-        },
-        {
-          "src": "/images/uploads/img_20241215_181755_658.jpg"
-        },
-        {
-          "src": "/images/uploads/Devoir drapé_2TBCHOÏ_PelloquinElisa.jpg"
-        }
-      ]
-    },
-    {
       "name": "Manga",
       "images": [
         {
@@ -98,6 +81,23 @@
         },
         {
           "src": "/images/uploads/Manga - A la Recherche du Bonheur (Pelloquin Elisa ATC TBCHOÏ)_016.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Divers",
+      "images": [
+        {
+          "src": "/images/uploads/MATCHA LOVER.jpg"
+        },
+        {
+          "src": "/images/uploads/inshot_20260911_144017263.jpg"
+        },
+        {
+          "src": "/images/uploads/img_20241215_181755_658.jpg"
+        },
+        {
+          "src": "/images/uploads/Devoir drapé_2TBCHOÏ_PelloquinElisa.jpg"
         }
       ]
     }
