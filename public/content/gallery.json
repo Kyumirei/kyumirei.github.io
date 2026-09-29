@@ -4,18 +4,6 @@
       "name": "Illustration de personnages/Character Illustration",
       "images": [
         {
-          "src": "/images/uploads/2ATBCHOÏ_PELLOQUINELISA_LOFIGIRL.jpg"
-        },
-        {
-          "src": "/images/uploads/Sorcière_halloween_2025_scan(froid).jpg"
-        },
-        {
-          "src": "/images/uploads/Character Design Avatar Zoom Science FINAL v.9.png"
-        },
-        {
-          "src": "/images/uploads/fan_art_silksong_12_2025_0001.tif"
-        },
-        {
           "src": "/images/uploads/character-vert-illustration.webp"
         },
         {
@@ -26,6 +14,15 @@
         },
         {
           "src": "/images/uploads/lofigirl-compressé-.webp"
+        },
+        {
+          "src": "/images/uploads/sorcière_halloween_2025_scan-froid-.webp"
+        },
+        {
+          "src": "/images/uploads/character-design-avatar-zoom-science-final-bleu-compressé-.webp"
+        },
+        {
+          "src": "/images/uploads/fan_art_silksong_12_2025_0001-compressé-.webp"
         }
       ]
     },
