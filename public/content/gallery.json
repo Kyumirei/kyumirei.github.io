@@ -44,26 +44,16 @@
       "name": "Decors/Background",
       "images": [
         {
-          "src": "/images/uploads/20260717_172629.jpg",
-          "alt": "Jardin des Plantes - Toulouse (2026)"
+          "src": "/images/uploads/peinture-jardin-des-plantes-compressé-.webp"
         },
         {
-          "src": "/images/uploads/Intérieur Victorien - Salon.jpg",
-          "alt": "Intérieur Victorien - 2026"
+          "src": "/images/uploads/décors-taverne-line-compressé-.webp"
         },
         {
-          "src": "/images/uploads/2ATCTBCHOI_PELLOQUINELISA_BOUTIQUEFUTURISTE_PERSPECTIVE.jpg",
-          "alt": "Boutique Futuriste - Café à chats (2026)"
+          "src": "/images/uploads/boutiquefuturiste_perspective-compressé-.webp"
         },
         {
-          "src": "/images/uploads/2ATCTBCHOI_PELLOQUINELISA_BOUTIQUEFUTURISTE_DEVANTURECOULEUR - Copie.jpg",
-          "alt": "Boutique Futuriste - Café à chats : couleur (2026)"
-        },
-        {
-          "src": "/images/uploads/20260404_142238-v2.jpg"
-        },
-        {
-          "src": "/images/uploads/img_0916-v3.jpg"
+          "src": "/images/uploads/boutique-futuriste-devanture-couleur-compressé-.webp"
         }
       ]
     },
