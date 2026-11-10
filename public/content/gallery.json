@@ -27,7 +27,7 @@
       ]
     },
     {
-      "name": "Character Design",
+      "name": "Character et Props Design",
       "images": [
         {
           "src": "/images/uploads/character-design-rock-star-compressé-.webp"
@@ -37,6 +37,15 @@
         },
         {
           "src": "/images/uploads/dnd_planchechara-compressé-.webp"
+        },
+        {
+          "src": "/images/uploads/projet-hades-mock-up.webp"
+        },
+        {
+          "src": "/images/uploads/projet-hades-personnage-character-design.webp"
+        },
+        {
+          "src": "/images/uploads/projet-hades-props-perso.webp"
         }
       ]
     },
